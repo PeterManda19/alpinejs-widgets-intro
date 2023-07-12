@@ -9,7 +9,7 @@ git commit -m "Initial commit"
 
 # Create remote repository on GitHub and add it as origin
 # Replace <remote_repository_url> with your actual URL
-git remote add origin <remote_repository_url>
+git remote add origin git@github.com:PeterManda19/alpinejs-widgets-intro.git
 
 # Push files to remote repository
 git push -u origin master
