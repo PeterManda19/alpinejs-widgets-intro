@@ -35,8 +35,10 @@ repository_name=$(basename -s .git $(git config --get remote.origin.url))
 # Print the deployment URL
 echo "Your web page is deployed at: http://$github_username.github.io/$repository_name"
 
-# Delete master branch locally
-git branch -D master
+# Delete master branch locally (if it exists)
+if git show-ref --quiet refs/heads/master; then
+  git branch -D master
+fi
 
 # Delete master branch on remote repository
 git push origin --delete master
