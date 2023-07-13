@@ -1,4 +1,4 @@
-# The "git_project_setup.sh" script assumes that you have already created a remote repository on GitHub.
+**The "git_project_setup.sh" script assumes that you have already created a remote repository on GitHub.**
 ```python
 Manually replace "<remote_repository_url>" in the script with the actual URL of your remote repository
 before running it.

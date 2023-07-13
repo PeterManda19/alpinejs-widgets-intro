@@ -7,13 +7,28 @@
     <link rel="stylesheet" href="styles.css">
     
 </head>
-<body>
-    <h2>Message widget</h2>
-    <div x-data="{ message: '', enteredMessage: 'Peter' }">
-      <div x-text="message"></div>
-      <button x-on:click="message = enteredMessage">Show message</button>
-    </div>
+<body class="darkmode"> 
+    <div class="grid-container center-div">
+        <h2>Message widget</h2>
+        <div class="container">
+            <div class="widget" x-data="{ message: '', enteredMessage: 'Peter' }">
+                <div class="widget-content">
+                    <p x-text="message"></p>
+                    <button x-on:click="message = enteredMessage">Show message</button>
+                </div>  
+            </div>
+    
+            <div class="widget" x-data="{ message: '', enteredMessage: '' }">
+              <div class="widget-content">
+                <p x-text="message"></p>
+                <input type="text" x-model="enteredMessage">
+                <button x-on:click="message = enteredMessage">Update Message</button>
+              </div>
+            </div>
+        </div>
 
+    </div>
+      
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.0/dist/alpine.js" defer></script>
 </body>
 </html>
