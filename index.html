@@ -8,38 +8,32 @@
     
 </head>
 <body class="darkmode"> 
-    <div class="grid-container center-div">
-        <h3>Message widgets</h3>
-        <div class="container">
-            <div class="widget" x-data="{ message: '', enteredMessage: 'Peter' }">
-                <div class="widget-content">
-                    <p x-text="message"></p>
-                    <button x-on:click="message = enteredMessage">Show message</button>
-                </div>  
-            </div>
-    
-            <div class="widget" x-data="{ message: '', enteredMessage: '' }">
-              <div class="widget-content">
+    <div class="">
+        
+        <div class="" x-data="{ message: '', enteredMessage: 'Peter' }">
+            <h3>Message widgets</h3>
+            <div class="">
                 <p x-text="message"></p>
-                <input type="text" x-model="enteredMessage">
+                <button x-on:click="message = enteredMessage">Show message</button>
                 <button x-on:click="message = enteredMessage">Update Message</button>
-              </div>
-            </div>
+                <input type="text" x-model="enteredMessage">
+            </div>  
         </div>
 
-        <div class="widget" x-data="{ title: 'Hello Alpine' }">
+        <div class="" x-data="{ title: 'Hello Alpine' }">
             <h3>Click Events</h3>
-            <div class="widget-content">
+            <div class="">
                 <p x-text="title"></p>
                 <button @click="title='Alpine Rocks!'">click me</button>
             </div> 
         </div>
 
-        <div class="widget" x-data="{ title: 'Hello Alpine' }">
-            <h3>Click Events</h3>
-            <div class="widget-content">
-                <p x-text="title"></p>
-                <button @click="title='Alpine Rocks!'">click me</button>
+        <div class="" x-data="{ count: 1 }">
+            <h3>Counter Component</h3>
+            <div class="">
+                <p x-text="count"></p>
+                <button @click="count++">Count Up</button>
+                <button @click="count--">Count Down</button>
             </div> 
         </div>
 

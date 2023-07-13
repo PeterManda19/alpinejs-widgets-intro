@@ -15,7 +15,7 @@
 .widget {
     width: 50%;
     padding: 10px;
-    flex: 1;
+    
 }
 
 @media (max-width: 600px) {
